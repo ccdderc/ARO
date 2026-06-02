@@ -13,7 +13,7 @@ A multi-omic machine learning framework for training autoencoder models on combi
 
 1. **Clone the repository:**
    ```bash
-   git clone <repo-url>
+   git clone git@github.com:ccdderc/ARO.git
    cd ARO
    ```
 
