@@ -1,0 +1,43 @@
+method: bayes
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+  dropout:
+    distribution: uniform
+    max: 0.2
+    min: 0.0
+  hidden_dim:
+    distribution: int_uniform
+    max: 4096
+    min: 512
+  lr:
+    distribution: uniform
+    max: 1e-4
+    min: 1e-6
+  n_hidden_layers:
+    distribution: int_uniform
+    max: 5
+    min: 1
+  weight_decay:
+    distribution: uniform
+    max: 0.2
+    min: 0
+  mask_vals:
+    distribution: categorical
+    values:
+      - true
+      - false
+  use_batch_norm:
+    distribution: categorical
+    values:
+      - true
+      - false
+command:
+  - uv
+  - run
+  - -m
+  - src.train_script
+  - -cn
+  - raw_linear
+  - ${args_no_hyphens}

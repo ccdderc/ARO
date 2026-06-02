@@ -1,0 +1,10 @@
+model: "Attention"
+batch_size: 80
+lr: 0.01
+weight_decay: 0.1
+epochs: 200
+precision: "bf16-mixed"
+head_dim: 64
+n_heads: 8
+num_omics: 74_002
+module: masked

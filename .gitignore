@@ -1,0 +1,10 @@
+saved_weights.pt
+data/
+.DS_Store
+__pycache__/
+__marimo__/
+logs/
+tea_debug.log
+outputs/
+wandb/
+images/

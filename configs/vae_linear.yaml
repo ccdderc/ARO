@@ -1,0 +1,13 @@
+model: "LinearVAE"
+batch_size: 80
+lr: 0.0001
+weight_decay: 0
+hidden_dim: 4096
+n_enc: 3
+n_dec: 3
+epochs: 1000
+precision: "bf16-mixed"
+dropout: 0.1
+dist_dim: 2048
+module: vae
+use_log_space: true

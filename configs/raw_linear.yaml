@@ -1,0 +1,15 @@
+model: "Linear"
+batch_size: 80
+lr: 0.00001
+weight_decay: 0
+epochs: 200
+precision: "bf16-mixed"
+hidden_dim: 2048
+n_hidden_layers: 3
+dropout: 0.2
+dropout_input: 0.1
+normalized: false
+module: ae
+use_log_space: true
+mask_vals: false
+use_batch_norm: false
